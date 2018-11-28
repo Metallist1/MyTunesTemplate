@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytunesassigment.gui.controller.PopupSongController">
+   <children>
+      <Label fx:id="specificFunctionLabel" layoutX="235.0" layoutY="14.0" text="Create / Edit Song" />
+      <TextField fx:id="nameField" layoutX="202.0" layoutY="99.0" promptText="Insert Name" />
+      <TextField fx:id="artistField" layoutX="202.0" layoutY="137.0" promptText="Insert Artist" />
+      <Label fx:id="timeField" layoutX="202.0" layoutY="222.0" />
+      <Label fx:id="urlField" layoutX="202.0" layoutY="256.0" />
+      <ChoiceBox fx:id="categoryChoice" layoutX="201.0" layoutY="175.0" prefWidth="150.0" />
+      <Button layoutX="199.0" layoutY="283.0" mnemonicParsing="false" onAction="#chooseURL" text="Choose..." />
+      <Button layoutX="456.0" layoutY="336.0" mnemonicParsing="false" onAction="#goBack" text="Cancel" />
+      <Button layoutX="378.0" layoutY="336.0" mnemonicParsing="false" onAction="#saveSong" text="Save" />
+      <Label layoutX="118.0" layoutY="102.0" text="Name :" />
+      <Label layoutX="118.0" layoutY="140.0" text="Artist :" />
+      <Label layoutX="118.0" layoutY="178.0" text="Category :" />
+      <Label layoutX="118.0" layoutY="221.0" text="Time :" />
+      <Label layoutX="118.0" layoutY="255.0" text="Url : " />
+      <Label fx:id="errorLabel" layoutX="120.0" layoutY="56.0" />
+   </children>
+</AnchorPane>

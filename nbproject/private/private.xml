@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/be/Song.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/bll/LogicFacade.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/view/popupPlaylist.fxml</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/MyTunesAssigment.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/controller/PopupSongController.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/dal/PlaylistDAO.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/dal/SongDAO.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/controller/PlaylistController.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/dal/DatabaseConnectionDAO.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/controller/PopupPlaylistController.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/view/MainWindowView.fxml</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/dal/PlaylistSongDAO.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/bll/Manager.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/bll/util/SongFilter.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/be/Playlist.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/view/popupSong.fxml</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/model/SongModel.java</file>
+            <file>file:/C:/Users/nedas/Desktop/Everything/School/Java%20programs/MyTunesAssigment/src/mytunesassigment/gui/model/PlaylistModel.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytunesassigment.gui.controller.PlaylistController">
+   <children>
+      <Label fx:id="currentSong" layoutX="193.0" layoutY="33.0" text="(none) is playing" />
+      <VBox layoutX="14.0" layoutY="11.0" prefHeight="62.0" prefWidth="168.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="158.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#SkipSongBackward" text="Back" />
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#playSong" text="Play" />
+                  <Button mnemonicParsing="false" onAction="#skipSongForward" text="Front" />
+               </children>
+            </HBox>
+            <Slider fx:id="volumeSlider" blockIncrement="1.0" majorTickUnit="0.25" max="1.0" onMouseReleased="#setSound" prefHeight="38.0" prefWidth="166.0" showTickLabels="true" showTickMarks="true" value="0.5" />
+         </children>
+      </VBox>
+      <HBox layoutX="545.0" layoutY="26.0" prefHeight="32.0" prefWidth="270.0">
+         <children>
+            <TextField fx:id="searchTextBox" onKeyPressed="#search" />
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="75.0" prefHeight="322.0" prefWidth="818.0">
+         <children>
+            <VBox prefHeight="322.0" prefWidth="222.0">
+               <children>
+                  <Label text="Playlists" />
+                  <TableView fx:id="playlistTableView" onMouseClicked="#displaySongsInPlaylist" prefHeight="254.0" prefWidth="222.0">
+                    <columns>
+                      <TableColumn fx:id="playlistSongNames" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="playlistSongTotalCount" prefWidth="75.0" text="Total songs" />
+                        <TableColumn fx:id="playlistSongTotalTime" prefWidth="75.0" text="Total time" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="38.0" prefWidth="124.0">
+                     <children>
+                        <Button fx:id="playlistCreateButton" mnemonicParsing="false" onAction="#createPlaylist" text="New" />
+                        <Button fx:id="playlistEditButton" mnemonicParsing="false" onAction="#editPlaylist" text="Edit" />
+                        <Button fx:id="playlistDeleteButton" mnemonicParsing="false" onAction="#deletePlaylist" text="Delete" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="322.0" prefWidth="146.0">
+               <children>
+                  <Label text="Songs in playlist" />
+                  <TableView fx:id="songsInPlaylist" prefHeight="303.0" prefWidth="146.0">
+                    <columns>
+                      <TableColumn fx:id="songInPlaylistID" prefWidth="31.200012981891632" text="ID" />
+                      <TableColumn fx:id="songsInPlaylistName" prefWidth="119.20000839233398" text="Song Name" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#moveSongDown" text="/\" />
+                        <Button mnemonicParsing="false" onAction="#moveSongUp" text="\\/" />
+                        <Button mnemonicParsing="false" onAction="#removeSong" text="Remove" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#addSong" text="&lt;">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <VBox prefHeight="322.0" prefWidth="288.0">
+               <children>
+                  <Label text="Songs" />
+                  <TableView fx:id="tableViewSongs" prefHeight="274.0" prefWidth="214.0">
+                    <columns>
+                      <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="artistColumn" prefWidth="75.0" text="Artist" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category" />
+                        <TableColumn fx:id="timeColumn" prefWidth="75.0" text="Time" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="34.0" prefWidth="185.0">
+                           <children>
+                              <Button fx:id="songCreateButton" mnemonicParsing="false" onAction="#createSong" text="New" />
+                              <Button fx:id="songEditButton" mnemonicParsing="false" onAction="#editSong" text="Edit" />
+                              <Button fx:id="songDeleteButton" mnemonicParsing="false" onAction="#deleteSong" text="Delete" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

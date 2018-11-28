@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MyTunesAssigment.jnlp">
+  <information>
+    <title>MyTunesAssigment</title>
+    <vendor>nedas</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MyTunesAssigment.jar" size="21567" download="eager" />
+    <jar href="lib\mssql-jdbc-7.0.0.jre8.jar" size="1166240" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MyTunesAssigment" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mytunesassigment.MyTunesAssigment"  name="MyTunesAssigment" />
+  <update check="always"/>
+</jnlp>
